@@ -20,11 +20,11 @@ main {
 
 main .box {
     width: 100%;
-    height: 40rem;
+    height: 60rem;
     position: absolute;
-    bottom: -25rem;
-    border-radius: 5%;
-    background-color: rgb(214, 145, 145);
+    bottom: -52rem;
+    border-radius: 3%;
+    background-color: rgb(255, 255, 255);
 }
 
 .box .font {
@@ -41,19 +41,87 @@ main .box {
 .box .font h1 {
     font-size: 2.5rem;
 }
-
+.box .font p{
+    color: rgb(100, 100, 100);
+}
 .box1 {
     width: 100%;
-    height: 25rem;
+    height: 45rem;
     position: absolute;
-    text-align: center;
-    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.5rem;
+    /* background-color: skyblue; */
 }
 
 .box1 input {
+outline: none;
+/* border: 1px solid red; */
+border: 0;
+font-size: 2rem;
+padding-left: 2rem;
+}
+.ip1,
+.ip2,
+.ip3,
+.ip4
+{
     width: 80%;
     height: 5rem;
-    outline: none;
+    line-height: 5rem;
+    background-color: #fff;
+    border: 1px solid #999;
     margin-top: 1rem;
-    padding-left: 2rem;
+}
+.ip5 p{
+    display: inline-block;
+}
+.ip5{
+    width: 80%;
+    height: 5rem;
+    line-height: 5rem;
+    background-color: #fff;
+    margin-top: 1rem;
+}
+.ip6{
+    width: 80%;
+    height: 4rem;
+    line-height: 4rem;
+    /* background-color: rgb( 36,41,43); */
+    margin-top: 1rem;
+}
+.ip6 input{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgb( 36,41,43);
+}
+footer{
+    margin-top: 2rem;
+    position: absolute;
+    margin-top: 43rem;
+}
+.box3 .mask{
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    bottom: -53rem;
+    z-index: 2;
+    font-size: 1.5rem;
+    color: rgb(146, 146, 146);
+    background-color: rgb( 36,41,43,.8);
+}
+.box4{
+    width: 100%;
+    height: 3rem;
+    /* background-color: pink; */
+}
+.box4-left{
+    float: left;
+    padding: 1rem;
+}
+.box4-right{
+    float: right;
+padding: 1rem;
 }
