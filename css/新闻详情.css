@@ -1,0 +1,35 @@
+main{
+    width: 90%;
+    margin: 3rem auto;
+ 
+}
+.details{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 1px solid black;
+    margin: 2rem 0;
+}
+.details p{
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    color: #999;
+}
+.details-content p{
+    width: 100%;
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+}
+.details-content img{
+    width: 100%;
+}
+.details-content h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.end{
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1.5rem 0;
+}
