@@ -33,12 +33,10 @@ a {
 .player>img:last-child {
   width: .8rem;
   transform: translateX(-0.5rem)
-
-
 }
 
 
-.player-stop>img:nth-of-type(2){
+.player-stop>img:nth-of-type(2) {
   animation: musicStop 0.2s linear forwards;
 }
 
@@ -48,21 +46,21 @@ a {
 
 @keyframes musicStop {
   from {
-    transform: translate(-0.5rem,-0.3rem) rotate(25deg);
+    transform: translate(-0.5rem, -0.3rem) rotate(25deg);
   }
 
   to {
-    transform: translate(-0.5rem,-0.3rem) rotate(0deg);
+    transform: translate(-0.5rem, -0.3rem) rotate(0deg);
   }
 }
 
 @keyframes musicStart {
   from {
-    transform: translate(-0.5rem,-0.3rem) rotate(0deg)
+    transform: translate(-0.5rem, -0.3rem) rotate(0deg)
   }
 
   to {
-    transform: translate(-0.5rem,-0.3rem) rotate(25deg)
+    transform: translate(-0.5rem, -0.3rem) rotate(25deg)
   }
 }
 
@@ -72,7 +70,7 @@ a {
 
 
 .player-stop>img:nth-of-type(1) {
-  animation-play-state:paused;
+  animation-play-state: paused;
 }
 
 
@@ -133,7 +131,7 @@ nav {
   flex-direction: column;
   background-color: #fff;
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 3;
 }
 
@@ -151,6 +149,9 @@ nav div img {
 
 nav div span {
   padding-right: 3rem;
+}
+nav ul a{
+  text-decoration: none;
 }
 
 nav div .iconfont {
