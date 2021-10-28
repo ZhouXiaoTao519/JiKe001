@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  font-size: 62.5%;
+  background-color: rgb(243, 241, 241);
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 右上角唱片 */
+.player {
+  position: fixed;
+  top: 6rem;
+  right: 1rem;
+  z-index: 1;
+}
+
+.player>img:first-child {
+  width: 3rem;
+  height: 3rem;
+  /* animation: musicRotate 3s linear infinite; */
+}
+
+.player>img:last-child {
+  width: .8rem;
+  transform: translateX(-0.5rem)
+    /* animation: musicStart 0.2s linear forwards; */
+
+}
+
+
+.player-stop>img:last-child {
+  animation: musicStop 0.2s linear forwards;
+}
+
+.player-start>img:last-child {
+  animation: musicStart 0.2s linear forwards;
+}
+
+@keyframes musicStop {
+  from {
+    transform: translateX(-0.5rem) rotate(20deg);
+  }
+
+  to {
+    transform: translateX(-0.5rem) rotate(0deg);
+  }
+}
+
+@keyframes musicStart {
+  from {
+    transform: translateX(-0.5rem) rotate(0deg)
+  }
+
+  to {
+    transform: translateX(-0.5rem) rotate(20deg)
+  }
+}
+
+.player-start>img:first-child {
+  animation: musicRotate 3s linear infinite;
+}
+
+
+.player-stop>img:nth-of-type(1) {
+  animation-play-state: paused;
+}
+
+
+
+@keyframes musicRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 头部 */
+header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: #fff;
+}
+
+header img:nth-of-type(1) {
+  height: 2rem;
+}
+
+header img:nth-of-type(2) {
+  height: 2.5rem;
+  padding-left: 3rem;
+}
+
+header span {
+  border: 1px solid gold;
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  transform: scale(.9);
+}
+
+
+/* 导航栏 */
+nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  z-index: 3;
+}
+
+nav div {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div img {
+  height: 2.5rem;
+  padding-left: 3rem;
+}
+
+nav div span {
+  padding-right: 3rem;
+}
+
+nav div .iconfont {
+  font-size: 2rem;
+  color: #333;
+}
+
+nav ul {
+  margin-top: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+
+nav ul .iconfont {
+  font-size: 1.8rem;
+
+}
+
+nav li {
+  color: #333;
+  border-bottom: 1px solid rgb(156, 156, 156);
+  height: 7rem;
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+
+.xuanzhong {
+  color: #ff5800;
+}
+
+.xuanzhong li .iconfont {
+  color: #ff5800;
+}
+
+/* 尾部 */
+footer {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tb img {
+  width: 2rem;
+}
+
+.tb {
+  width: 50%;
+  /* background-color: pink; */
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer p {
+  color: #999;
+  margin-top: 1rem;
+  font-size: .5rem;
+  transform: scale(.7);
+}
+
+footer p:nth-of-type(1) {
+  color: rgb(59, 59, 59);
+}
+
+/* main */
+main {
+  height: 50rem;
+  /*可以删除*/
+}
