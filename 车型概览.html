@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>车型概览</title>
     <link rel="stylesheet" href="./css/车型概览.css">
     <link rel="stylesheet" href="./fonts/iconfont.css">
     <script src="./js/touch.min.js"></script>
     <script src="./js/jquery.min.js"></script>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -18,8 +20,6 @@
         <img src="./img/music_play.png" />
     </div>
     <nav>
-        <!-- <span class="iconfont icon-you"></span>
-        <span class="iconfont icon-guanbi"></span> -->
         <div>
             <span></span>
             <img src="./img/x.png" alt="">
@@ -64,7 +64,78 @@
         <img src="./img/x.png" alt="">
         <span><a href="./预约咨询.html">预约咨询</a></span>
     </header>
-    <main></main>
+    <audio id="music">
+        <source src="./img/背景音乐.mp3" type="audio/mpeg">
+    </audio>
+    <main>
+        <!-- 轮播图 -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- 分页器 -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            </div>
+
+            <!-- 轮播图片 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/kv0.f4c89c6.jpg" class="d-block" style="width:100%">
+                    <!-- <div class="carousel-caption">
+                        <h3>第一张图片描述标题</h3>
+                    </div> -->
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/kv1.8c0c2ea.jpg" class="d-block" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <!-- 轮播图 -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- 分页器 -->
+            <div class="carousel-indicators">
+                <div></div>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            </div>
+
+            <!-- 轮播图片 -->
+            <div class="carousel-inner lbt">
+                <div class="carousel-item active">
+                    <img src="./img/pic0_0.ebd35de.jpg" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>家华猎装轿跑
+                        </h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/pic0_1.50e7268.jpg" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>感应式无框自动门
+                        </h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/pic0_2.fb93256.jpg" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>光电映射
+                            美学立体灯组
+                        </h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/pic0_3.5794511.jpg" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>旅行家魔术背箱
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="tb">
             <img src="./img/wx.png" alt="">

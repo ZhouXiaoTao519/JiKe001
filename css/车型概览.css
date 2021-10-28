@@ -12,8 +12,8 @@ html {
 }
 
 a {
+  color: #000;
   text-decoration: none;
-  color: #333;
 }
 
 /* 右上角唱片 */
@@ -95,6 +95,10 @@ header {
   align-items: center;
   padding: 0 2rem;
   background-color: #fff;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
 header img:nth-of-type(1) {
@@ -111,10 +115,15 @@ header span {
   width: 6rem;
   height: 2rem;
   text-align: center;
+  line-height: 2rem;
   font-size: 1rem;
   transform: scale(.9);
 }
 
+header span a {
+  color: #000;
+  text-decoration: none;
+}
 
 /* 导航栏 */
 nav {
@@ -184,6 +193,7 @@ nav li {
 
 /* 尾部 */
 footer {
+  margin: 2rem 0;
   width: 100%;
   height: 3rem;
   display: flex;
@@ -216,7 +226,9 @@ footer p:nth-of-type(1) {
 }
 
 /* main */
-main {
-  height: 50rem;
-  /*可以删除*/
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.322);
+  margin-bottom: 3rem;
+  border-top: 2px solid #ff5800;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.027));
 }
