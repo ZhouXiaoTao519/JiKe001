@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 62.5%;
+}
+
+main {
+    width: 100%;
+    position: relative;
+}
+
+.img img {
+    width: 100%;
+}
+
+main .box {
+    width: 100%;
+    height: 40rem;
+    position: absolute;
+    bottom: -25rem;
+    border-radius: 5%;
+    background-color: rgb(214, 145, 145);
+}
+
+.box .font {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    /* background-color: pink; */
+}
+
+.box .font h1 {
+    font-size: 2.5rem;
+}
+
+.box1 {
+    width: 100%;
+    height: 25rem;
+    position: absolute;
+    text-align: center;
+    background-color: skyblue;
+}
+
+.box1 input {
+    width: 80%;
+    height: 5rem;
+    outline: none;
+    margin-top: 1rem;
+    padding-left: 2rem;
+}
