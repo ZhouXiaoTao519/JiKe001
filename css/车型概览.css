@@ -6,9 +6,9 @@
 body,
 html {
   font-size: 62.5%;
-  background-color: rgb(243, 241, 241);
+  /* background-color: rgb(243, 241, 241); */
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 a {
@@ -213,10 +213,4 @@ footer p {
 
 footer p:nth-of-type(1) {
   color: rgb(59, 59, 59);
-}
-
-/* main */
-main {
-  height: 50rem;
-  /*可以删除*/
 }
