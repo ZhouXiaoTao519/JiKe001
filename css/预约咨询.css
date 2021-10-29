@@ -41,9 +41,11 @@ main .box {
 .box .font h1 {
     font-size: 2.5rem;
 }
-.box .font p{
+
+.box .font p {
     color: rgb(100, 100, 100);
 }
+
 .box1 {
     width: 100%;
     height: 45rem;
@@ -56,17 +58,25 @@ main .box {
 }
 
 .box1 input {
-outline: none;
-/* border: 1px solid red; */
-border: 0;
-font-size: 2rem;
-padding-left: 2rem;
+    outline: none;
+    /* background-color: rgb(255, 255, 255); */
+    border: 1px solid /red;
+    border: 0;
+    width: 50%;
+    /* margin-top: 1.2rem; */
+
+    font-size: 2rem;
+    padding-left: 2rem;
 }
+
+.ip5 .checkbox {
+    width: 10%;
+}
+
 .ip1,
 .ip2,
 .ip3,
-.ip4
-{
+.ip4 {
     width: 80%;
     height: 5rem;
     line-height: 5rem;
@@ -74,35 +84,40 @@ padding-left: 2rem;
     border: 1px solid #999;
     margin-top: 1rem;
 }
-.ip5 p{
+
+.ip5 p {
     display: inline-block;
 }
-.ip5{
+
+.ip5 {
     width: 80%;
     height: 5rem;
     line-height: 5rem;
     background-color: #fff;
     margin-top: 1rem;
 }
-.ip6{
+
+.ip6 {
     width: 80%;
     height: 4rem;
     line-height: 4rem;
-    /* background-color: rgb( 36,41,43); */
+    background-color: rgb(36, 41, 43);
     margin-top: 1rem;
 }
-.ip6 input{
+
+.ip6 input {
     width: 100%;
     height: 100%;
+    background-color: rgb(36, 41, 43);
     color: #fff;
-    background-color: rgb( 36,41,43);
 }
-footer{
-    margin-top: 2rem;
+
+footer {
     position: absolute;
-    margin-top: 43rem;
+    margin-top: 42rem;
 }
-.box3 .mask{
+
+.box3 .mask {
     width: 100%;
     height: 20rem;
     position: absolute;
@@ -110,18 +125,52 @@ footer{
     z-index: 2;
     font-size: 1.5rem;
     color: rgb(146, 146, 146);
-    background-color: rgb( 36,41,43,.8);
+    background-color: rgb(36, 41, 43, .8);
 }
-.box4{
+
+.box4 {
     width: 100%;
     height: 3rem;
     /* background-color: pink; */
 }
-.box4-left{
+
+.box4-left {
     float: left;
     padding: 1rem;
 }
-.box4-right{
+
+
+.box4-right {
     float: right;
-padding: 1rem;
+    padding: 1rem;
+}
+
+.message {
+    width: 12rem;
+    height: 3rem;
+    /* background-color: red; */
+}
+
+i {
+    display: inline-block;
+    background: url('../img/sprite.jpg')no-repeat;
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+}
+
+ip1 p {
+    transform: scale(.3);
+}
+
+.ati {
+    background-position: 0px 0px;
+}
+
+.err {
+    background-position: 0px -58px;
+}
+
+.ok {
+    background-position: 0 -31px;
 }

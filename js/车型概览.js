@@ -51,6 +51,11 @@ $(function () {
     $(".tab1").hide();
   });
 });
+// $(function () {
+//   $('.btn').on('click', function () {
+//     window.location.href = "./新闻详情.html";
+//   })
+// })
 
 function setRem() {
   // 设计稿宽度和设备宽度

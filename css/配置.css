@@ -71,11 +71,13 @@ option{
     width: 40%;
     font-size: 1.6rem;
     color: rgb(73, 73, 73);
-    
-   
+}
+.color-content li img:hover{
+    transform: scale(1);
 }
 .color-content li img{
     width: 100%;
+    transform: scale(0.9);
     image-rendering: -webkit-optimize-contrast;
 }
 .style{
