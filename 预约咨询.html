@@ -86,16 +86,20 @@
     </div>
     <div class="box1">
       <div class="ip1">
-        <input type="text" placeholder="姓名" />
+        <input class="i1" type="text" placeholder="姓名" />
+        <p class="message"><i class="active"></i></p>
       </div>
       <div class="ip2">
-        <input type="text" placeholder="请输入省份" />
+        <input class="i2" type="text" placeholder="请输入省份" />
+        <p class="message"><i class="active"></i></p>
       </div>
       <div class="ip3">
-        <input type="text" placeholder="请输入城市" />
+        <input class="i3" type="text" placeholder="请输入城市" />
+        <p class="message"><i class="active"></i></p>
       </div>
       <div class="ip4">
-        <input type="text" placeholder="手机号" />
+        <input class="i4" type="text" placeholder="手机号" />
+        <p class="message"><i class="active"></i></p>
       </div>
 
       <div class="ip5">
@@ -109,17 +113,92 @@
       </div>
     </div>
   </main>
-  <!-- <footer>
-      <div class="tb">
-        <img src="./img/wx.png" alt="" />
-        <img src="./img/wb.png" alt="" />
-        <img src="./img/xcx.png" alt="" />
-      </div>
-      <p>隐私政策法律声明加入我们联系我们:400-0036-036极愿APP</p>
-      <p>浙江极愿智能科技有限公司浙ICP备2021025402号-1</p>
-    </footer> -->
+  <footer>
+    <div class="tb">
+      <img src="./img/wx.png" alt="" />
+      <img src="./img/wb.png" alt="" />
+      <img src="./img/xcx.png" alt="" />
+    </div>
+    <p>隐私政策法律声明加入我们联系我们:400-0036-036极愿APP</p>
+    <p>浙江极愿智能科技有限公司浙ICP备2021025402号-1</p>
+  </footer>
 </body>
 
 </html>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/车型概览.js"></script>
+<script>
+  var i1 = document.getElementsByClassName('i1')[0];
+  var i2 = document.getElementsByClassName('i2');
+  var i3 = document.getElementsByClassName('i3');
+  var i4 = document.getElementsByClassName('i4');
+  var ip1 = document.getElementsByClassName('ip1')[0];
+  var p = document.getElementsByClassName('message');
+  i1.onfocus = function () {
+    p[0].style.display = 'inline-block'
+    p[0].innerHTML = '6-12个字符';
+  }
+  i2[0].onfocus = function () {
+    p[1].style.display = 'inline-block'
+    p[1].innerHTML = '2以上个字符';
+  }
+  i3[0].onfocus = function () {
+    p[2].style.display = 'inline-block'
+    p[2].innerHTML = '2以上个字符';
+  }
+  i4[0].onfocus = function () {
+    p[3].style.display = 'inline-block'
+    p[3].innerHTML = '11位数字';
+  }
+  i1.onblur = function () {
+    var reg = /^[\w\u4e00-\u9fa5]{2,4}$/;
+    if (i1.value == '') {
+      p[0].innerHTML = '<i class="err"></i>2-4以上个字符';
+      return false;
+    } else if (!reg.test(i1.value)) {
+      p[0].innerHTML = '<i class="err"></i>2-4以上个字符';
+      return false;
+    } else {
+      p[0].innerHTML = '<i class="ok"></i>正确';
+      return true;
+    }
+  }
+  i2[0].onblur = function () {
+    var reg = /^[\u4e00-\u9fa5]{2,}$/;
+    if (i2[0].value == '') {
+      p[1].innerHTML = '<i class="err"></i>不能为空';
+      return false;
+    } else if (!reg.test(i2[0].value)) {
+      p[1].innerHTML = '<i class="err"></i>2以上个字符';
+      return false;
+    } else {
+      p[1].innerHTML = '<i class="ok"></i>正确';
+      return true;
+    }
+  }
+  i3[0].onblur = function () {
+    var reg = /^[\u4e00-\u9fa5]{2,}$/;
+    if (i3[0].value == '') {
+      p[2].innerHTML = '<i class="err"></i>不能为空';
+      return false;
+    } else if (!reg.test(i3[0].value)) {
+      p[2].innerHTML = '<i class="err"></i>2以上个字符';
+      return false;
+    } else {
+      p[2].innerHTML = '<i class="ok"></i>正确';
+      return true;
+    }
+  }
+  i4[0].onblur = function () {
+    var reg = /[^0-9]{11}&/;
+    if (i4[0].value == '') {
+      p[3].innerHTML = '<i class="err"></i>不能为空';
+      return false;
+    } else if (!reg.test(i4[0].value)) {
+      p[3].innerHTML = '<i class="err"></i>11位数字';
+    } else {
+      p[3].innerHTML = '<i class="ok"></i>正确';
+      return true;
+    }
+  }
+</script>
