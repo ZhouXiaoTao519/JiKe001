@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>配置单详情</title>
     <link rel="stylesheet" href="./n.css">
     <link rel="stylesheet" href="./css/车型概览.css">
@@ -13,63 +15,73 @@
 
 
 </head>
+    <link rel="stylesheet" href="./css/车型概览.css" />
+    <link rel="stylesheet" href="./fonts/iconfont.css" />
+    <link rel="stylesheet" href="./css/配置.css" />
+    <script src="./js/touch.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+  </head>
 
-<body>
+  <body>
     <div class="player" id="play">
-        <img src="./img/music_icon.png" />
-        <img src="./img/music_play.png" />
+      <img src="./img/music_icon.png" />
+      <img src="./img/music_play.png" />
     </div>
     <audio id="music">
-        <source src="./img/背景音乐.mp3" type="audio/mpeg">
+      <source src="./img/背景音乐.mp3" type="audio/mpeg" />
     </audio>
     <nav>
-        <!-- <span class="iconfont icon-you"></span>
+      <!-- <span class="iconfont icon-you"></span>
         <span class="iconfont icon-guanbi"></span> -->
-        <div>
-            <span></span>
-            <img src="./img/x.png" alt="">
-            <span class="iconfont icon-guanbi gb"></span>
-        </div>
-        <ul>
-            <a href="./车型概览.html">
-                <li>
-                    <p>车型概览</p><span class="iconfont icon-you"></span>
-                </li>
-            </a>
-            <a href="./品牌中心.html">
-                <li>
-                    <p>品牌中心</p><span class="iconfont icon-you"></span>
-                </li>
-            </a>
-            <a href="./配置单详情.html">
-                <li class="xuanzhong">
-                    <p>配置单详情</p><span class="iconfont icon-you"></span>
-                </li>
-            </a>
-            <a href="./预约咨询.html">
-                <li>
-                    <p>预约咨询</p><span class="iconfont icon-you"></span>
-                </li>
-            </a>
-            <a href="./即刻预定.html">
-                <li>
-                    <p>即刻预定</p><span class="iconfont icon-you"></span>
-                </li>
-            </a>
-            <a href="./极氪订阅.html">
-                <li>
-                    <p>极氪订阅</p><span class="iconfont icon-you"></span>
-                </li>
-            </a>
-        </ul>
-
+      <div>
+        <span></span>
+        <img src="./img/x.png" alt="" />
+        <span class="iconfont icon-guanbi gb"></span>
+      </div>
+      <ul>
+        <a href="./车型概览.html">
+          <li>
+            <p>车型概览</p>
+            <span class="iconfont icon-you"></span>
+          </li>
+        </a>
+        <a href="./品牌中心.html">
+          <li>
+            <p>品牌中心</p>
+            <span class="iconfont icon-you"></span>
+          </li>
+        </a>
+        <a href="./配置单详情.html">
+          <li class="xuanzhong">
+            <p>配置单详情</p>
+            <span class="iconfont icon-you"></span>
+          </li>
+        </a>
+        <a href="./预约咨询.html">
+          <li>
+            <p>预约咨询</p>
+            <span class="iconfont icon-you"></span>
+          </li>
+        </a>
+        <a href="./即刻预定.html">
+          <li>
+            <p>即刻预定</p>
+            <span class="iconfont icon-you"></span>
+          </li>
+        </a>
+        <a href="./极氪订阅.html">
+          <li>
+            <p>极氪订阅</p>
+            <span class="iconfont icon-you"></span>
+          </li>
+        </a>
+      </ul>
     </nav>
 
-
     <header>
-        <img class="cd" src="./img/cd.png" alt="">
-        <img src="./img/x.png" alt="">
-        <span><a href="./预约咨询.html">预约咨询</a></span>
+      <img class="cd" src="./img/cd.png" alt="" />
+      <img src="./img/x.png" alt="" />
+      <span><a href="./预约咨询.html">预约咨询</a></span>
     </header>
 
     <main>
@@ -148,774 +160,462 @@
                     <p>（前轮可选配Akebono四活塞卡钳）</p>
                 </li>
             </ul>
+      <div class="header">
+        <select>
+          <option value=""><a href="#abc1">超长续航双电机-YOU版</a></option>
+          <option value=""><a href="">长续航双电机-WE版</a></option>
+          <option value=""><a href="">超长续航单电机-WE版</a></option>
+        </select>
+      </div>
+      <div class="color">
+        <div class="boos-header">
+          <span><img src="./img/tb.png" alt="" /></span>
+          <span>外观颜色</span>
         </div>
-        <div class="param">
-            <div class="boos-header">
-                <span><img src="./img/tb.png" alt=""></span>
-                <span>规格参数</span>
-            </div>
-            <ul class="param-content">
-                <li>
-                    长度（mm）
-                    <span></span>
-                    <span>4970</span>
-                </li>
-                <li>
-                    宽度(mm)
-                    <span></span>
-
-                    <span>1999</span>
-                </li>
-                <li>
-                    高度(mm)
-                    <span></span>
-
-                    <span>1548</span>
-                </li>
-                <li>
-                    轴距(mm)
-                    <span></span>
-
-                    <span>3005</span>
-                </li>
-                <li>
-                    空载离地间隙(mm)
-                    <span></span>
-
-                    <span>117-200</span>
-                </li>
-                <li>
-                    乘坐人数
-                    <span></span>
-
-                    <span>5</span>
-                </li>
-            </ul>
+        <ul class="color-content">
+          <li>
+            <img src="./img/极昼白.b9dae97.jpg" alt="" />
+            极昼白
+          </li>
+          <li>
+            <img src="./img/镭射灰.c8f8bd8.jpg" alt="" />
+            镭射灰
+          </li>
+          <li>
+            <img src="./img/极光紫.e60784e.jpg" alt="" />
+            极光紫
+          </li>
+          <li>
+            <img src="./img/电光蓝.32e4697.jpg" alt="" />
+            电光蓝
+          </li>
+          <li>
+            <img src="./img/碳素黑.d3809fb.jpg" alt="" />
+            碳素黑
+          </li>
+          <li>
+            <img src="./img/星尘红.2e112a2.jpg" alt="" />
+            星尘红
+          </li>
+        </ul>
+      </div>
+      <div class="style">
+        <div class="boos-header">
+          <span><img src="./img/tb.png" alt="" /></span>
+          <span>轮毂样式</span>
         </div>
-        <div class="param">
-            <div class="boos-header">
-                <span><img src="./img/tb.png" alt=""></span>
-                <span>性能及操控</span>
-            </div>
-            <ul class="param-content">
-                <h2>三电系统</h2>
-                <li>
-                    极芯电池包（KWh）
-                    <span></span>
-
-                    <span>100</span>
-                </li>
-                <li>
-                    NEDC综合工况续航里程(km)
-                    <span></span>
-
-                    <span>606*</span>
-                </li>
-                <li>
-                    电池类型
-                    <span></span>
-
-                    <span>三元锂电池</span>
-                </li>
-                <li>
-                    高性能永磁同步电驱动力系统
-                    <span></span>
-
-                    <span>双电机AWD</span>
-                </li>
-                <li>
-                    0-100km/h加速时间(s)
-                    <span></span>
-
-                    <span>3.8*</span>
-                </li>
-                <li>
-                    电机峰值功率(kW)
-                    <span></span>
-
-                    <span>400</span>
-                </li>
-                <li>
-                    电机峰值功率(N.m)
-                    <span></span>
-
-                    <span>686/768</span>
-                </li>
-                <li>
-                    最大轮端扭矩(N.m)
-                    <span></span>
-
-                    <span>7680</span>
-                </li>
-                <li>
-                    制动能量回收系统
-                    <span>(三级别可调)</span>
-                    <span>s</span>
-                </li>
-                <li>
-                    PTM五维热管理系统
-                    <span></span>
-
-                    <span>s</span>
-                </li>
-                <li>
-                    直接式热泵系统
-                    <span></span>
-
-                    <span>s</span>
-                </li>
-                <h2>底盘系统</h2>
-                <li>
-                    高性能空气悬架套装
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    前双叉臂虚拟双球头悬架
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    后集成多连杆全铝悬架
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    前后横向稳定杆
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    路感优化液压衬套
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    随速调节电子助力转向系统
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    可变转向比系统
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    空气涡流主动式进气口
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    EPB电子驻车制动
-                    <span>(带Autohold自动驻车)</span>
-                    <span>S</span>
-                </li>
-                <li>
-                    iBooster 2.0 电子助力制动系统
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    One-pedal 单踏板驾驶模式
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    驾驶模式选择
-                    <span>（运动，节能，舒适，个性化）</span>
-                    <span>S</span>
-                </li>
-                <li>
-                    高级驾驶模式选择
-                    <span>（雪地，沙地，越野）</span>
-                    <span>S</span>
-                </li>
-            </ul>
+        <ul class="style-content">
+          <li>
+            <img src="./img/21英寸空气涡流轮毂.174ad0e.jpg" alt="" />
+            <p>21英寸空气涡流轮毂 255/45 R21</p>
+            <p></p>
+          </li>
+          <li>
+            <img src="./img/21英寸弧光幻影轮毂.7dd04bd.jpg" alt="" />
+            <p>21英寸弧光幻影轮毂 255/45 R21</p>
+            <p>（前轮可选配Akebono四活塞卡钳）</p>
+          </li>
+          <li>
+            <img src="./img/21英寸多幅射线轮毂.a672f93.jpg" alt="" />
+            <p>21英寸多幅射线轮毂 255/45 R21</p>
+            <p>（前轮可选配Akebono四活塞卡钳）</p>
+          </li>
+          <li>
+            <img src="./img/22英寸能量光刃轮毂.8232bd7.jpg" alt="" />
+            <p>22英寸能量光刃轮毂 265/40 R22</p>
+            <p>（前轮可选配Akebono四活塞卡钳）</p>
+          </li>
+        </ul>
+      </div>
+      <div class="param">
+        <div class="boos-header">
+          <span><img src="./img/tb.png" alt="" /></span>
+          <span>规格参数</span>
         </div>
-        <div class="param">
-            <div class="boos-header">
-                <span><img src="./img/tb.png" alt=""></span>
-                <span>猎装运动豪华</span>
-            </div>
-            <ul class="param-content">
-                <h2>灯光与美学</h2>
-                <li>
-                    极芯电池包（KWh）
-                    <span></span>
+        <ul class="param-content">
+          <li>
+            长度（mm）
+            <span></span>
+            <span>4970</span>
+          </li>
+          <li>
+            宽度(mm)
+            <span></span>
 
-                    <span>100</span>
-                </li>
-                <li>
-                    NEDC综合工况续航里程(km)
-                    <span></span>
+            <span>1999</span>
+          </li>
+          <li>
+            高度(mm)
+            <span></span>
 
-                    <span>606*</span>
-                </li>
-                <li>
-                    电池类型
-                    <span></span>
+            <span>1548</span>
+          </li>
+          <li>
+            轴距(mm)
+            <span></span>
 
-                    <span>三元锂电池</span>
-                </li>
-                <li>
-                    高性能永磁同步电驱动力系统
-                    <span></span>
+            <span>3005</span>
+          </li>
+          <li>
+            空载离地间隙(mm)
+            <span></span>
 
-                    <span>双电机AWD</span>
-                </li>
-                <li>
-                    0-100km/h加速时间(s)
-                    <span></span>
+            <span>117-200</span>
+          </li>
+          <li>
+            乘坐人数
+            <span></span>
 
-                    <span>3.8*</span>
-                </li>
-                <li>
-                    电机峰值功率(kW)
-                    <span></span>
-
-                    <span>400</span>
-                </li>
-                <li>
-                    电机峰值功率(N.m)
-                    <span></span>
-
-                    <span>686/768</span>
-                </li>
-                <li>
-                    最大轮端扭矩(N.m)
-                    <span></span>
-
-                    <span>7680</span>
-                </li>
-                <li>
-                    制动能量回收系统
-                    <span>(三级别可调)</span>
-                    <span>s</span>
-                </li>
-                <li>
-                    PTM五维热管理系统
-                    <span></span>
-
-                    <span>s</span>
-                </li>
-                <li>
-                    直接式热泵系统
-                    <span></span>
-
-                    <span>s</span>
-                </li>
-                <h2>车门，玻璃与后视镜</h2>
-                <li>
-                    高性能空气悬架套装
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    前双叉臂虚拟双球头悬架
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    后集成多连杆全铝悬架
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    前后横向稳定杆
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    路感优化液压衬套
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    随速调节电子助力转向系统
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    可变转向比系统
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    空气涡流主动式进气口
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    EPB电子驻车制动
-                    <span>(带Autohold自动驻车)</span>
-                    <span>S</span>
-                </li>
-                <li>
-                    iBooster 2.0 电子助力制动系统
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <h2>座椅，工艺与功能</h2>
-                <li>
-                    高性能空气悬架套装
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    前双叉臂虚拟双球头悬架
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    后集成多连杆全铝悬架
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    前后横向稳定杆
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    路感优化液压衬套
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    随速调节电子助力转向系统
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    可变转向比系统
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    空气涡流主动式进气口
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    EPB电子驻车制动
-                    <span>(带Autohold自动驻车)</span>
-                    <span>S</span>
-                </li>
-                <li>
-                    iBooster 2.0 电子助力制动系统
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <h2>旅行家的魔术背箱</h2>
-                <li>
-                    高性能空气悬架套装
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    前双叉臂虚拟双球头悬架
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    后集成多连杆全铝悬架
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    前后横向稳定杆
-                    <span></span>
-                    <span>S</span>
-                </li>
-                <li>
-                    路感优化液压衬套
-                    <span></span>
-                    <span>S</span>
-                </li>
-            </ul>
+            <span>5</span>
+          </li>
+        </ul>
+      </div>
+      <div class="param">
+        <div class="boos-header">
+          <span><img src="./img/tb.png" alt="" /></span>
+          <span>性能及操控</span>
         </div>
-        <div class="param">
-            <div class="boos-header">
-                <span><img src="./img/tb.png" alt=""></span>
-                <span>安全及智能驾驶</span>
-            </div>
-            <ul class="param-content">
-                <h2>主被动集成式安全防护系统</h2>
-                <h1>Passenger Guard乘员保护系统</h1>
-                <li>
-                    极芯电池包（KWh）
-                    <span></span>
-                    <span>100</span>
-                </li>
-                <li>
-                    NEDC综合工况续航里程(km)
-                    <span></span>
-                    <span>606*</span>
-                </li>
-                <li>
-                    电池类型
-                    <span></span>
-                    <span>三元锂电池</span>
-                </li>
-                <li>
-                    高性能永磁同步电驱动力系统
-                    <span></span>
-                    <span>双电机AWD</span>
-                </li>
-                <li>
-                    0-100km/h加速时间(s)
-                    <span></span>
-                    <span>3.8*</span>
-                </li>
-                <li>
-                    电机峰值功率(kW)
-                    <span></span>
-                    <span>400</span>
-                </li>
-                <li>
-                    电机峰值功率(N.m)
-                    <span></span>
-                    <span>686/768</span>
-                </li>
-                <h1>Vehicle Guard车辆安全保护系统</h1>
-                <li>
-                    极芯电池包（KWh）
-                    <span></span>
-                    <span>100</span>
-                </li>
-                <li>
-                    NEDC综合工况续航里程(km)
-                    <span></span>
-                    <span>606*</span>
-                </li>
-                <li>
-                    电池类型
-                    <span></span>
-                    <span>三元锂电池</span>
-                </li>
-                <li>
-                    高性能永磁同步电驱动力系统
-                    <span></span>
-                    <span>双电机AWD</span>
-                </li>
-                <li>
-                    0-100km/h加速时间(s)
-                    <span></span>
-                    <span>3.8*</span>
-                </li>
-                <li>
-                    电机峰值功率(kW)
-                    <span></span>
-                    <span>400</span>
-                </li>
-                <li>
-                    电机峰值功率(N.m)
-                    <span></span>
-                    <span>686/768</span>
-                </li>
-                <li>
-                    最大轮端扭矩(N.m)
-                    <span></span>
+        <ul class="param-content">
+          <h2>三电系统</h2>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
 
-                    <span>7680</span>
-                </li>
-                <li>
-                    制动能量回收系统
-                    <span>(三级别可调)</span>
-                    <span>s</span>
-                </li>
-                <li>
-                    PTM五维热管理系统
-                    <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
 
-                    <span>s</span>
-                </li>
-                <li>
-                    直接式热泵系统
-                    <span></span>
+            <span>606*</span>
+          </li>
+          <li>
+            电池类型
+            <span></span>
 
-                    <span>s</span>
-                </li>
-                <li>
-                    直接式热泵系统
-                    <span></span>
+            <span>三元锂电池</span>
+          </li>
+          <li>
+            高性能永磁同步电驱动力系统
+            <span></span>
 
-                    <span>s</span>
-                </li>
+            <span>双电机AWD</span>
+          </li>
+          <li>
+            0-100km/h加速时间(s)
+            <span></span>
 
-            </ul>
+            <span>3.8*</span>
+          </li>
+          <li>
+            电机峰值功率(kW)
+            <span></span>
+
+            <span>400</span>
+          </li>
+          <li>
+            电机峰值功率(N.m)
+            <span></span>
+
+            <span>686/768</span>
+          </li>
+          <li>
+            最大轮端扭矩(N.m)
+            <span></span>
+
+            <span>7680</span>
+          </li>
+          <li>
+            制动能量回收系统
+            <span>(三级别可调)</span>
+            <span>s</span>
+          </li>
+          <li>
+            PTM五维热管理系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+          <li>
+            直接式热泵系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+          <h2>底盘系统</h2>
+          <li>
+            高性能空气悬架套装
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            前双叉臂虚拟双球头悬架
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            后集成多连杆全铝悬架
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            前后横向稳定杆
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            路感优化液压衬套
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            随速调节电子助力转向系统
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            可变转向比系统
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            空气涡流主动式进气口
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            EPB电子驻车制动
+            <span>(带Autohold自动驻车)</span>
+            <span>S</span>
+          </li>
+          <li>
+            iBooster 2.0 电子助力制动系统
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            One-pedal 单踏板驾驶模式
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            驾驶模式选择
+            <span>（运动，节能，舒适，个性化）</span>
+            <span>S</span>
+          </li>
+          <li>
+            高级驾驶模式选择
+            <span>（雪地，沙地，越野）</span>
+            <span>S</span>
+          </li>
+        </ul>
+      </div>
+      <div class="param">
+        <div class="boos-header">
+          <span><img src="./img/tb.png" alt="" /></span>
+          <span>猎装运动豪华</span>
         </div>
-        <div class="param">
-            <div class="boos-header">
-                <span><img src="./img/tb.png" alt=""></span>
-                <span>ZEEKR AD 智能驾驶辅助系统</span>
-            </div>
-            <ul class="param-content">
-                <h2>感知与算法</h2>
-                <li>
-                    极芯电池包（KWh）
-                    <span></span>
-                    <span>100</span>
-                </li>
-                <li>
-                    NEDC综合工况续航里程(km)
-                    <span></span>
-                    <span>606*</span>
-                </li>
-                <li>
-                    电池类型
-                    <span></span>
-                    <span>三元锂电池</span>
-                </li>
-                <h2>感知与算法</h2>
-                <li>
-                    极芯电池包（KWh）
-                    <span></span>
-                    <span>100</span>
-                </li>
-                <li>
-                    NEDC综合工况续航里程(km)
-                    <span></span>
-                    <span>606*</span>
-                </li>
-                <li>
-                    电池类型
-                    <span></span>
-                    <span>三元锂电池</span>
-                </li>
-                <li>
-                    极芯电池包（KWh）
-                    <span></span>
-                    <span>100</span>
-                </li>
-                <li>
-                    NEDC综合工况续航里程(km)
-                    <span></span>
-                    <span>606*</span>
-                </li>
-                <li>
-                    电池类型
-                    <span></span>
-                    <span>三元锂电池</span>
-                </li>
-                <li>
-                    极芯电池包（KWh）
-                    <span></span>
-                    <span>100</span>
-                </li>
-                <li>
-                    NEDC综合工况续航里程(km)
-                    <span></span>
-                    <span>606*</span>
-                </li>
-                <li>
-                    电池类型
-                    <span></span>
-                    <span>三元锂电池</span>
-                </li>
-                <li>
-                    极芯电池包（KWh）
-                    <span></span>
-                    <span>100</span>
-                </li>
-                <li>
-                    NEDC综合工况续航里程(km)
-                    <span></span>
-                    <span>606*</span>
-                </li>
-                <h2>ZAD - Advanced 增强智能驾驶辅助系统*** </h2>
-                <h2>ZAD - Ultimate 完全智能驾驶辅助系统***</h2>
+        <ul class="param-content">
+          <h2>灯光与美学</h2>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
 
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
 
-            </ul>
-        </div>
-        <div class="param">
-            <div class="boos-header">
-                <span><img src="./img/tb.png" alt=""></span>
-                <span>ZEEKR OS智能座舱及出行生态</span>
-            </div>
-            <ul class="param-content">
-                <h2>智能驾享座舱</h2>
-                <li>
-                    长度（mm）
-                    <span></span>
-                    <span>4970</span>
-                </li>
-                <li>
-                    宽度(mm)
-                    <span></span>
+            <span>606*</span>
+          </li>
+          <li>
+            电池类型
+            <span></span>
 
-                    <span>1999</span>
-                </li>
-                <li>
-                    高度(mm)
-                    <span></span>
+            <span>三元锂电池</span>
+          </li>
+          <li>
+            高性能永磁同步电驱动力系统
+            <span></span>
 
-                    <span>1548</span>
-                </li>
-                <li>
-                    轴距(mm)
-                    <span></span>
+            <span>双电机AWD</span>
+          </li>
+          <li>
+            0-100km/h加速时间(s)
+            <span></span>
 
-                    <span>3005</span>
-                </li>
-                <li>
-                    空载离地间隙(mm)
-                    <span></span>
+            <span>3.8*</span>
+          </li>
+          <li>
+            电机峰值功率(kW)
+            <span></span>
 
-                    <span>117-200</span>
-                </li>
-                <li>
-                    乘坐人数
-                    <span></span>
-                    <span>5</span>
-                </li>
-                <li>
-                    长度（mm）
-                    <span></span>
-                    <span>4970</span>
-                </li>
-                <li>
-                    宽度(mm)
-                    <span></span>
+            <span>400</span>
+          </li>
+          <li>
+            电机峰值功率(N.m)
+            <span></span>
 
-                    <span>1999</span>
-                </li>
-                <li>
-                    高度(mm)
-                    <span></span>
+            <span>686/768</span>
+          </li>
+          <li>
+            最大轮端扭矩(N.m)
+            <span></span>
 
-                    <span>1548</span>
-                </li>
-                <li>
-                    轴距(mm)
-                    <span></span>
+            <span>7680</span>
+          </li>
+          <li>
+            制动能量回收系统
+            <span>(三级别可调)</span>
+            <span>s</span>
+          </li>
+          <li>
+            PTM五维热管理系统
+            <span></span>
 
-                    <span>3005</span>
-                </li>
-                <li>
-                    空载离地间隙(mm)
-                    <span></span>
+            <span>s</span>
+          </li>
+          <li>
+            直接式热泵系统
+            <span></span>
 
-                    <span>117-200</span>
-                </li>
-                <li>
-                    乘坐人数
-                    <span></span>
-                    <span>5</span>
-                </li>
-                <li>
-                    乘坐人数
-                    <span></span>
-                    <span>5</span>
-                </li>
-                <h2>清洁温控座舱</h2>
-                <li>
-                    长度（mm）
-                    <span></span>
-                    <span>4970</span>
-                </li>
-                <li>
-                    宽度(mm)
-                    <span></span>
-
-                    <span>1999</span>
-                </li>
-                <li>
-                    高度(mm)
-                    <span></span>
-
-                    <span>1548</span>
-                </li>
-                <li>
-                    轴距(mm)
-                    <span></span>
-
-                    <span>3005</span>
-                </li>
-                <li>
-                    空载离地间隙(mm)
-                    <span></span>
-
-                    <span>117-200</span>
-                </li>
-                <li>
-                    乘坐人数
-                    <span></span>
-                    <span>5</span>
-                </li>
-                <li>
-                    长度（mm）
-                    <span></span>
-                    <span>4970</span>
-                </li>
-                <li>
-                    宽度(mm)
-                    <span></span>
-
-                    <span>1999</span>
-                </li>
-                <li>
-                    高度(mm)
-                    <span></span>
-
-                    <span>1548</span>
-                </li>
-                <li>
-                    轴距(mm)
-                    <span></span>
-
-                    <span>3005</span>
-                </li>
-                <li>
-                    空载离地间隙(mm)
-                    <span></span>
-
-                    <span>117-200</span>
-                </li>
-                <h2>智能生态圈</h2>
-                <li>
-                    长度（mm）
-                    <span></span>
-                    <span>4970</span>
-                </li>
-                <li>
-                    宽度(mm)
-                    <span></span>
-
-                    <span>1999</span>
-                </li>
-                <li>
-                    高度(mm)
-                    <span></span>
-
-                    <span>1548</span>
-                </li>
-                <li>
-                    轴距(mm)
-                    <span></span>
-
-                    <span>3005</span>
-                </li>
-                <h2>补能</h2>
-                <li>
-                    长度（mm）
-                    <span></span>
-                    <span>4970</span>
-                </li>
-                <li>
-                    宽度(mm)
-                    <span></span>
-
-                    <span>1999</span>
-                </li>
-                <li>
-                    高度(mm)
-                    <span></span>
-
-                    <span>1548</span>
-                </li>
-            </ul>
+            <span>s</span>
+          </li>
+          <h2>车门，玻璃与后视镜</h2>
+          <li>
+            高性能空气悬架套装
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            前双叉臂虚拟双球头悬架
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            后集成多连杆全铝悬架
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            前后横向稳定杆
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            路感优化液压衬套
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            随速调节电子助力转向系统
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            可变转向比系统
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            空气涡流主动式进气口
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            EPB电子驻车制动
+            <span>(带Autohold自动驻车)</span>
+            <span>S</span>
+          </li>
+          <li>
+            iBooster 2.0 电子助力制动系统
+            <span></span>
+            <span>S</span>
+          </li>
+          <h2>座椅，工艺与功能</h2>
+          <li>
+            高性能空气悬架套装
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            前双叉臂虚拟双球头悬架
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            后集成多连杆全铝悬架
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            前后横向稳定杆
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            路感优化液压衬套
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            随速调节电子助力转向系统
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            可变转向比系统
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            空气涡流主动式进气口
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            EPB电子驻车制动
+            <span>(带Autohold自动驻车)</span>
+            <span>S</span>
+          </li>
+          <li>
+            iBooster 2.0 电子助力制动系统
+            <span></span>
+            <span>S</span>
+          </li>
+          <h2>旅行家的魔术背箱</h2>
+          <li>
+            高性能空气悬架套装
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            前双叉臂虚拟双球头悬架
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            后集成多连杆全铝悬架
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            前后横向稳定杆
+            <span></span>
+            <span>S</span>
+          </li>
+          <li>
+            路感优化液压衬套
+            <span></span>
+            <span>S</span>
+          </li>
+        </ul>
+      </div>
+      <div class="param">
+        <div class="boos-header">
+          <span><img src="./img/tb.png" alt="" /></span>
+          <span>安全及智能驾驶</span>
         </div>
         <div class="param">
             <div class="boos-header xuanz">
@@ -1162,45 +862,656 @@
                     <span>s</span>
                 </li>
             </ul>
+        <ul class="param-content">
+          <h2>主被动集成式安全防护系统</h2>
+          <h1>Passenger Guard乘员保护系统</h1>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
+            <span>606*</span>
+          </li>
+          <li>
+            电池类型
+            <span></span>
+            <span>三元锂电池</span>
+          </li>
+          <li>
+            高性能永磁同步电驱动力系统
+            <span></span>
+            <span>双电机AWD</span>
+          </li>
+          <li>
+            0-100km/h加速时间(s)
+            <span></span>
+            <span>3.8*</span>
+          </li>
+          <li>
+            电机峰值功率(kW)
+            <span></span>
+            <span>400</span>
+          </li>
+          <li>
+            电机峰值功率(N.m)
+            <span></span>
+            <span>686/768</span>
+          </li>
+          <h1>Vehicle Guard车辆安全保护系统</h1>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
+            <span>606*</span>
+          </li>
+          <li>
+            电池类型
+            <span></span>
+            <span>三元锂电池</span>
+          </li>
+          <li>
+            高性能永磁同步电驱动力系统
+            <span></span>
+            <span>双电机AWD</span>
+          </li>
+          <li>
+            0-100km/h加速时间(s)
+            <span></span>
+            <span>3.8*</span>
+          </li>
+          <li>
+            电机峰值功率(kW)
+            <span></span>
+            <span>400</span>
+          </li>
+          <li>
+            电机峰值功率(N.m)
+            <span></span>
+            <span>686/768</span>
+          </li>
+          <li>
+            最大轮端扭矩(N.m)
+            <span></span>
+
+            <span>7680</span>
+          </li>
+          <li>
+            制动能量回收系统
+            <span>(三级别可调)</span>
+            <span>s</span>
+          </li>
+          <li>
+            PTM五维热管理系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+          <li>
+            直接式热泵系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+          <li>
+            直接式热泵系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+        </ul>
+      </div>
+      <div class="param" id="abc1">
+        <div class="boos-header">
+          <span><img src="./img/tb.png" alt="" /></span>
+          <span>ZEEKR AD 智能驾驶辅助系统</span>
         </div>
-        <div class="hint">
-            温馨提示:
-            <p>
-
-                1.标识“*”标识数据基于工程开发模拟数据，可能会因场地，天气，路况，电量，载重等测试因素不同而有所差异，仅供参考
-
-            </p>
-            <p>
-                2.标识“**”表示相关功能将通过远程推送软件方式逐步开通
-            </p>
-            <p>
-                3.标识“***”ZAD智能驾驶辅助系统功能仅为驾驶辅助系统，无法应对所有的交通，天气，路况，也无法代替驾驶员操控车辆。驾驶员必须有时刻保持注意的义务，仔细观察周边情况并适时予以主动干预。在交通情况复杂，恶劣天气，特殊路况等情形下，请慎重使用相关功能
-            </p>
-            <p>
-                4.标识“S”为标配配置，标识“-”为无该配置，标识“o”为选装配置
-            </p>
-            <p>
-                5.极氪将不断对其产品进行改型和改造，汽车产品的装备和参数可能会有相应变化。我们会尽一切可能，确保信息的完整性及准确性；但由于一些客观原因，例如屏幕或纸张材质等的不确定性、法律法规的不断变化、个人对相关信息理解的不同、介绍信息可能存在更新不及时的情况等，实物车辆可能会与介绍信息存在一定的差异，具体请以实物车辆为最终依据。
-            </p>
+        <ul class="param-content">
+          <h2>感知与算法</h2>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
+            <span>606*</span>
+          </li>
+          <li>
+            电池类型
+            <span></span>
+            <span>三元锂电池</span>
+          </li>
+          <h2>感知与算法</h2>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
+            <span>606*</span>
+          </li>
+          <li>
+            电池类型
+            <span></span>
+            <span>三元锂电池</span>
+          </li>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
+            <span>606*</span>
+          </li>
+          <li>
+            电池类型
+            <span></span>
+            <span>三元锂电池</span>
+          </li>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
+            <span>606*</span>
+          </li>
+          <li>
+            电池类型
+            <span></span>
+            <span>三元锂电池</span>
+          </li>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
+            <span>606*</span>
+          </li>
+          <h2>ZAD - Advanced 增强智能驾驶辅助系统***</h2>
+          <h2>ZAD - Ultimate 完全智能驾驶辅助系统***</h2>
+        </ul>
+      </div>
+      <div class="param">
+        <div class="boos-header">
+          <span><img src="./img/tb.png" alt="" /></span>
+          <span>ZEEKR OS智能座舱及出行生态</span>
         </div>
+        <ul class="param-content">
+          <h2>智能驾享座舱</h2>
+          <li>
+            长度（mm）
+            <span></span>
+            <span>4970</span>
+          </li>
+          <li>
+            宽度(mm)
+            <span></span>
 
+            <span>1999</span>
+          </li>
+          <li>
+            高度(mm)
+            <span></span>
+
+            <span>1548</span>
+          </li>
+          <li>
+            轴距(mm)
+            <span></span>
+
+            <span>3005</span>
+          </li>
+          <li>
+            空载离地间隙(mm)
+            <span></span>
+
+            <span>117-200</span>
+          </li>
+          <li>
+            乘坐人数
+            <span></span>
+            <span>5</span>
+          </li>
+          <li>
+            长度（mm）
+            <span></span>
+            <span>4970</span>
+          </li>
+          <li>
+            宽度(mm)
+            <span></span>
+
+            <span>1999</span>
+          </li>
+          <li>
+            高度(mm)
+            <span></span>
+
+            <span>1548</span>
+          </li>
+          <li>
+            轴距(mm)
+            <span></span>
+
+            <span>3005</span>
+          </li>
+          <li>
+            空载离地间隙(mm)
+            <span></span>
+
+            <span>117-200</span>
+          </li>
+          <li>
+            乘坐人数
+            <span></span>
+            <span>5</span>
+          </li>
+          <li>
+            乘坐人数
+            <span></span>
+            <span>5</span>
+          </li>
+          <h2>清洁温控座舱</h2>
+          <li>
+            长度（mm）
+            <span></span>
+            <span>4970</span>
+          </li>
+          <li>
+            宽度(mm)
+            <span></span>
+
+            <span>1999</span>
+          </li>
+          <li>
+            高度(mm)
+            <span></span>
+
+            <span>1548</span>
+          </li>
+          <li>
+            轴距(mm)
+            <span></span>
+
+            <span>3005</span>
+          </li>
+          <li>
+            空载离地间隙(mm)
+            <span></span>
+
+            <span>117-200</span>
+          </li>
+          <li>
+            乘坐人数
+            <span></span>
+            <span>5</span>
+          </li>
+          <li>
+            长度（mm）
+            <span></span>
+            <span>4970</span>
+          </li>
+          <li>
+            宽度(mm)
+            <span></span>
+
+            <span>1999</span>
+          </li>
+          <li>
+            高度(mm)
+            <span></span>
+
+            <span>1548</span>
+          </li>
+          <li>
+            轴距(mm)
+            <span></span>
+
+            <span>3005</span>
+          </li>
+          <li>
+            空载离地间隙(mm)
+            <span></span>
+
+            <span>117-200</span>
+          </li>
+          <h2>智能生态圈</h2>
+          <li>
+            长度（mm）
+            <span></span>
+            <span>4970</span>
+          </li>
+          <li>
+            宽度(mm)
+            <span></span>
+
+            <span>1999</span>
+          </li>
+          <li>
+            高度(mm)
+            <span></span>
+
+            <span>1548</span>
+          </li>
+          <li>
+            轴距(mm)
+            <span></span>
+
+            <span>3005</span>
+          </li>
+          <h2>补能</h2>
+          <li>
+            长度（mm）
+            <span></span>
+            <span>4970</span>
+          </li>
+          <li>
+            宽度(mm)
+            <span></span>
+
+            <span>1999</span>
+          </li>
+          <li>
+            高度(mm)
+            <span></span>
+
+            <span>1548</span>
+          </li>
+        </ul>
+      </div>
+      <div class="param">
+        <div class="boos-header">
+          <span><img src="./img/tb.png" alt="" /></span>
+          <span>定制选装</span>
+        </div>
+        <ul class="param-content">
+          <h2>外观</h2>
+          <h1>车漆</h1>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
+            <span>606*</span>
+          </li>
+          <li>
+            电池类型
+            <span></span>
+            <span>三元锂电池</span>
+          </li>
+          <li>
+            高性能永磁同步电驱动力系统
+            <span></span>
+            <span>双电机AWD</span>
+          </li>
+          <li>
+            0-100km/h加速时间(s)
+            <span></span>
+            <span>3.8*</span>
+          </li>
+          <li>
+            电机峰值功率(kW)
+            <span></span>
+            <span>400</span>
+          </li>
+          <h1>车顶</h1>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
+            <span>606*</span>
+          </li>
+          <h1>车轮</h1>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
+            <span>606*</span>
+          </li>
+          <li>
+            电机峰值功率(N.m)
+            <span></span>
+            <span>686/768</span>
+          </li>
+
+          <li>
+            极芯电池包（KWh）
+            <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
+            <span>606*</span>
+          </li>
+          <li>
+            电池类型
+            <span></span>
+            <span>三元锂电池</span>
+          </li>
+          <li>
+            高性能永磁同步电驱动力系统
+            <span></span>
+            <span>双电机AWD</span>
+          </li>
+          <h1>轮胎</h1>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
+            <span>606*</span>
+          </li>
+          <h2>内饰</h2>
+          <h1>内饰及材质颜色</h1>
+          <li>
+            极芯电池包（KWh）
+            <span></span>
+            <span>100</span>
+          </li>
+          <li>
+            NEDC综合工况续航里程(km)
+            <span></span>
+            <span>606*</span>
+          </li>
+          <li>
+            0-100km/h加速时间(s)
+            <span></span>
+            <span>3.8*</span>
+          </li>
+          <li>
+            电机峰值功率(kW)
+            <span></span>
+            <span>400</span>
+          </li>
+          <h2>高级功能选装</h2>
+          <li>
+            电机峰值功率(N.m)
+            <span></span>
+            <span>686/768</span>
+          </li>
+          <li>
+            最大轮端扭矩(N.m)
+            <span></span>
+
+            <span>7680</span>
+          </li>
+          <li>
+            制动能量回收系统
+            <span>(三级别可调)</span>
+            <span>s</span>
+          </li>
+          <li>
+            PTM五维热管理系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+          <li>
+            直接式热泵系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+          <li>
+            直接式热泵系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+          <li>
+            电机峰值功率(N.m)
+            <span></span>
+            <span>686/768</span>
+          </li>
+          <li>
+            最大轮端扭矩(N.m)
+            <span></span>
+
+            <span>7680</span>
+          </li>
+          <li>
+            制动能量回收系统
+            <span>(三级别可调)</span>
+            <span>s</span>
+          </li>
+          <li>
+            PTM五维热管理系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+          <li>
+            直接式热泵系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+          <li>
+            直接式热泵系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+          <li>
+            电机峰值功率(N.m)
+            <span></span>
+            <span>686/768</span>
+          </li>
+          <li>
+            最大轮端扭矩(N.m)
+            <span></span>
+
+            <span>7680</span>
+          </li>
+          <li>
+            制动能量回收系统
+            <span>(三级别可调)</span>
+            <span>s</span>
+          </li>
+          <li>
+            PTM五维热管理系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+          <li>
+            直接式热泵系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+          <li>
+            直接式热泵系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+          <li>
+            电机峰值功率(N.m)
+            <span></span>
+            <span>686/768</span>
+          </li>
+          <li>
+            最大轮端扭矩(N.m)
+            <span></span>
+
+            <span>7680</span>
+          </li>
+          <li>
+            制动能量回收系统
+            <span>(三级别可调)</span>
+            <span>s</span>
+          </li>
+          <li>
+            PTM五维热管理系统
+            <span></span>
+
+            <span>s</span>
+          </li>
+        </ul>
+      </div>
+      <div class="hint">
+        温馨提示:
+        <p>
+          1.标识“*”标识数据基于工程开发模拟数据，可能会因场地，天气，路况，电量，载重等测试因素不同而有所差异，仅供参考
+        </p>
+        <p>2.标识“**”表示相关功能将通过远程推送软件方式逐步开通</p>
+        <p>
+          3.标识“***”ZAD智能驾驶辅助系统功能仅为驾驶辅助系统，无法应对所有的交通，天气，路况，也无法代替驾驶员操控车辆。驾驶员必须有时刻保持注意的义务，仔细观察周边情况并适时予以主动干预。在交通情况复杂，恶劣天气，特殊路况等情形下，请慎重使用相关功能
+        </p>
+        <p>4.标识“S”为标配配置，标识“-”为无该配置，标识“o”为选装配置</p>
+        <p>
+          5.极氪将不断对其产品进行改型和改造，汽车产品的装备和参数可能会有相应变化。我们会尽一切可能，确保信息的完整性及准确性；但由于一些客观原因，例如屏幕或纸张材质等的不确定性、法律法规的不断变化、个人对相关信息理解的不同、介绍信息可能存在更新不及时的情况等，实物车辆可能会与介绍信息存在一定的差异，具体请以实物车辆为最终依据。
+        </p>
+      </div>
     </main>
 
-
     <footer>
-        <div class="tb">
-            <img src="./img/wx.png" alt="">
-            <img src="./img/wb.png" alt="">
-            <img src="./img/xcx.png" alt="">
-        </div>
-        <p>隐私政策法律声明加入我们联系我们:400-0036-036极愿APP</p>
-        <p>浙江极愿智能科技有限公司浙ICP备2021025402号-1</p>
+      <div class="tb">
+        <img src="./img/wx.png" alt="" />
+        <img src="./img/wb.png" alt="" />
+        <img src="./img/xcx.png" alt="" />
+      </div>
+      <p>隐私政策法律声明加入我们联系我们:400-0036-036极愿APP</p>
+      <p>浙江极愿智能科技有限公司浙ICP备2021025402号-1</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
 <script src="./js/touch.min.js"></script>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/车型概览.js"></script>
 <script src="./n.js"></script>
+<script src="./js/车型概览.js"></script>

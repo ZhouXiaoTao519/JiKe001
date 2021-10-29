@@ -20,10 +20,43 @@ $(function () {
   });
   touch.on($(".ip6"), "tap", function (ev) {
     var isChecked = $(".checkbox").prop("checked");
+<<<<<<< HEAD
     if (isChecked == false) {
       alert("请仔细阅读《隐私条款》");
     }
   });
+=======
+    if (isChecked == true) {
+      alert("提交成功！");
+    } else {
+      alert("请仔细阅读《隐私条款》");
+    }
+  });
+  // $()
+  $("body").bind("touchmove", function (e) {
+    console.log("距离顶部" + $(".car").offset().top);
+    console.log("高度" + $(document).scrollTop()); // 计算你的屏幕高度
+    if ($(document).scrollTop() > 400) {
+      $("#left").addClass("left-play");
+      $("#right").addClass("right-play");
+    }
+  });
+  $("body").bind("touchmove", function (e) {
+    if ($(document).scrollTop() > 900 || $(document).scrollTop() < 100) {
+      $("#left").removeClass("left-play");
+      $("#right").removeClass("right-play");
+    }
+  });
+  $(".tab2").hide();
+  touch.on($(".mc"), "tap", function (ev) {
+    $(".tab1").show();
+    $(".tab2").hide();
+  });
+  touch.on($(".cz"), "tap", function (ev) {
+    $(".tab2").show();
+    $(".tab1").hide();
+  });
+>>>>>>> 77d2f1c54a378ea63ca8ba82b70e2824a68eec7c
 });
 // $(function () {
 //   $('.btn').on('click', function () {
