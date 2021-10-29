@@ -8,10 +8,14 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>车型概览</title>
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/车型概览.css" />
     <link rel="stylesheet" href="./fonts/iconfont.css" />
+    
     <script src="./js/touch.min.js"></script>
     <script src="./js/jquery.min.js"></script>
+    
+    
     <link
       href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
       rel="stylesheet"
@@ -116,6 +120,29 @@
         </div>
       </div>
       <!-- 轮播图2 -->
+      <div class="car">
+        <img id="left" src="./img/left-car,0+拷贝.png" alt="" >
+        <div class="tab">
+          <div class="tab_btn">
+          <button class="mc wow  animated fadeInLeft" >我要买车</button>
+          <button class="cz wow  animated fadeInRight">我是车主</button>
+          </div>
+          
+          <div class="tab1">
+            <img src="./img/tool01.png"  alt="">
+            <img src="./img/方向盘-宋,0.png" alt="">
+            <img src="./img/tool03.png" alt="">
+          </div>
+          <div class="tab2">
+            <img src="./img/icon1.png"alt="">
+            <img src="./img/icon2,0.png"alt="">
+            <img src="./img/iocn3.png"alt="">
+          </div>
+          
+        </div>
+        <img id="right" src="./img/right-car,0+拷贝.png" alt="" >
+      </div>
+
       <div id="demo" class="carousel slide" data-bs-ride="carousel">
         <!-- 分页器 -->
         <div class="carousel-indicators">
@@ -142,7 +169,7 @@
             data-bs-slide-to="3"
           ></button>
         </div>
-
+        <div id="asd1"></div>
         <!-- 轮播图片 -->
         <div class="carousel-inner lbt">
           <div class="carousel-item active">
@@ -187,6 +214,8 @@
           </div>
         </div>
       </div>
+      <video src="https://vc9-tx2-pl-agv.autohome.com.cn/video-37/7767B91F7BD8538F/2021-05-02/0C3FA392DD4753D36F15C4841F4F2CE2-300-wm.mp4" style="width:100%;margin: 1rem 0 0.5rem;" autoplay loop muted>          
+      </video>
       <!-- 轮播图3 -->
       <div id="demo" class="carousel slide" data-bs-ride="carousel">
         <!-- 分页器 -->
@@ -300,3 +329,9 @@
   </body>
 </html>
 <script src="./js/车型概览.js"></script>
+<script src="./js/wow.js"></script>
+<script src="./js/dh.js"></script>
+<script>
+  new WOW().init();
+</script>
+
