@@ -43,6 +43,12 @@
             <span class="iconfont icon-you"></span>
           </li>
         </a>
+        <a href="./品牌故事.html">
+          <li>
+            <p>品牌故事</p>
+            <span class="iconfont icon-you"></span>
+          </li>
+        </a>
         <a href="./配置单详情.html">
           <li>
             <p>配置单详情</p>
@@ -233,9 +239,12 @@
     }
   };
   touch.on($(".i6"), "tap", function () {
-    console.log(i4[0].onblur());
     if (i4[0].onblur() && i3[0].onblur() && i2[0].onblur() && i1[0].onblur()) {
-      alert("111");
+      alert("注册成功!");
+      function myFunc() {
+        window.location.href = "./车型概览.html";
+      }
+      myFunc();
     }
   });
 </script>

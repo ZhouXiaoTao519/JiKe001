@@ -20,16 +20,14 @@ $(function () {
   });
   touch.on($(".ip6"), "tap", function (ev) {
     var isChecked = $(".checkbox").prop("checked");
-    if (isChecked == true) {
-      alert("提交成功！");
-    } else {
+    if (isChecked == false) {
       alert("请仔细阅读《隐私条款》");
     }
   });
   // $()
   $("body").bind("touchmove", function (e) {
-    console.log("距离顶部" + $(".car").offset().top);
-    console.log("高度" + $(document).scrollTop()); // 计算你的屏幕高度
+    // console.log("距离顶部" + $(".car").offset().top);
+    // console.log("高度" + $(document).scrollTop()); // 计算你的屏幕高度
     if ($(document).scrollTop() > 400) {
       $("#left").addClass("left-play");
       $("#right").addClass("right-play");
