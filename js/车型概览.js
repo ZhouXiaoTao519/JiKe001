@@ -20,12 +20,6 @@ $(function () {
   });
   touch.on($(".ip6"), "tap", function (ev) {
     var isChecked = $(".checkbox").prop("checked");
-<<<<<<< HEAD
-    if (isChecked == false) {
-      alert("请仔细阅读《隐私条款》");
-    }
-  });
-=======
     if (isChecked == true) {
       alert("提交成功！");
     } else {
@@ -56,7 +50,6 @@ $(function () {
     $(".tab2").show();
     $(".tab1").hide();
   });
->>>>>>> 77d2f1c54a378ea63ca8ba82b70e2824a68eec7c
 });
 // $(function () {
 //   $('.btn').on('click', function () {
