@@ -150,6 +150,9 @@ nav div img {
 nav div span {
   padding-right: 3rem;
 }
+nav ul a{
+  text-decoration: none;
+}
 
 nav div .iconfont {
   font-size: 2rem;
