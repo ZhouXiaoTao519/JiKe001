@@ -79,15 +79,17 @@ $(function () {
 
     if (i4[0].onblur() && i3[0].onblur() && i2[0].onblur() && i1[0].onblur()) {
       alert("注册成功!");
-    } else{
+    } else {
       alert("请按照提示要求填写！！！");
     }
-    if (isChecked == false||i4[0].onblur() && i3[0].onblur() && i2[0].onblur() && i1[0].onblur()) {
+  });
+
+  touch.on($(".ip6"), "tap", function (ev) {
+    var isChecked = $(".checkbox").prop("checked");
+    if (isChecked == false) {
       alert("请仔细阅读《隐私条款》");
     }
   });
-  
-  touch.on($(".ip6"), "tap", function (ev) {});
   touch.on($(".player"), "tap", function (ev) {
     var music = document.getElementById("music");
     if ($(".player").is(".player-start")) {
