@@ -110,8 +110,8 @@ $(function () {
 
   // $()
   $("body").bind("touchmove", function (e) {
-    console.log("距离顶部" + $(".car").offset().top);
-    console.log("高度" + $(document).scrollTop()); // 计算你的屏幕高度
+    // console.log("距离顶部" + $(".car").offset().top);
+    // console.log("高度" + $(document).scrollTop()); // 计算你的屏幕高度
     if ($(document).scrollTop() > 400) {
       $("#left").addClass("left-play");
       $("#right").addClass("right-play");
@@ -124,11 +124,16 @@ $(function () {
     }
   });
   $(".tab2").hide();
+  $(".mc").addClass("xuanzhong");
   touch.on($(".mc"), "tap", function (ev) {
+    $(".mc").addClass("xuanzhong");
+    $(".cz").removeClass("xuanzhong");
     $(".tab1").show();
     $(".tab2").hide();
   });
   touch.on($(".cz"), "tap", function (ev) {
+    $(".cz").addClass("xuanzhong");
+    $(".mc").removeClass("xuanzhong");
     $(".tab2").show();
     $(".tab1").hide();
   });
