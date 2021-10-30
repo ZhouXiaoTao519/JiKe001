@@ -3,6 +3,7 @@ var tb2 = document.getElementsByClassName("tb2")[0];
 var tb0 = document.getElementsByClassName("tb0")[0];
 var tb00 = document.getElementsByClassName("tb00")[0];
 var temp = 0;
+var doc = document.getElementsByTagName("body")[0];
 tb1.onclick = function () {
   if (temp == 0) {
     tb0.style.display = "block";
