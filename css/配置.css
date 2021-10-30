@@ -71,7 +71,7 @@ option {
   color: rgb(73, 73, 73);
 }
 .color-content li img:hover {
-  transform: scale(1.5);
+  transform: scale(1);
 }
 .color-content li img {
   width: 100%;

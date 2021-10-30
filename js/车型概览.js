@@ -40,11 +40,16 @@ $(function () {
     }
   });
   $(".tab2").hide();
+  $(".mc").addClass("xuanzhong");
   touch.on($(".mc"), "tap", function (ev) {
+    $(".mc").addClass("xuanzhong");
+    $(".cz").removeClass("xuanzhong");
     $(".tab1").show();
     $(".tab2").hide();
   });
   touch.on($(".cz"), "tap", function (ev) {
+    $(".cz").addClass("xuanzhong");
+    $(".mc").removeClass("xuanzhong");
     $(".tab2").show();
     $(".tab1").hide();
   });
