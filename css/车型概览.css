@@ -68,7 +68,7 @@ img {
   animation: musicRotate 3s linear infinite;
 }
 
-.player-stop > img:nth-of-type(1) {
+.player-stop > img {
   animation-play-state: paused;
 }
 
@@ -76,7 +76,6 @@ img {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
@@ -186,7 +185,10 @@ nav li {
 .xuanzhong li .iconfont {
   color: #ff5800;
 }
-
+.xuanz {
+  color: #ff5800;
+  background-color: rgb(134, 134, 134);
+}
 /* 尾部 */
 footer {
   margin: 2rem 0;

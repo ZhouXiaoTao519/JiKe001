@@ -15,6 +15,7 @@
     <script src="./js/touch.min.js"></script>
     <script src="./js/jquery.min.js"></script>
     <!-- <script src="./js/品牌故事.js"></script> -->
+    <link rel="stylesheet" href="./css/animate.css" />
   </head>
 
   <body>
@@ -207,3 +208,16 @@
   </script>
 </html>
 <script src="./js/车型概览.js"></script>
+<script src="./js/wow.js"></script>
+<script>
+  new WOW().init();
+  $(function () {
+    $("h1").addClass("wow  animated fadeInLeft");
+    $("h2").addClass("wow  animated fadeInRight");
+    $("div").addClass("wow  animated fadeInRight");
+    $("h3").addClass("wow  animated bounceInRight");
+    $("p").addClass("wow  animated bounceInLeft");
+    $("img").addClass("wow  animated bounceInRight");
+  });
+</script>
+<script src="http://www.jeendo.com/script/wow/wow.min2.js"></script>
