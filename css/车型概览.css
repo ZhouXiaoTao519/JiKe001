@@ -6,16 +6,18 @@
 body,
 html {
   font-size: 62.5%;
-  background-color: rgb(243, 241, 241);
+  /* background-color: rgb(243, 241, 241); */
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 a {
+  color: #000;
   text-decoration: none;
-  color: #333;
 }
-
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
 /* 右上角唱片 */
 .player {
   position: fixed;
@@ -24,64 +26,56 @@ a {
   z-index: 1;
 }
 
-.player>img:first-child {
+.player > img:first-child {
   width: 3rem;
   height: 3rem;
-  /* animation: musicRotate 3s linear infinite; */
 }
 
-.player>img:last-child {
-  width: .8rem;
-  transform: translateX(-0.5rem)
-    /* animation: musicStart 0.2s linear forwards; */
-
+.player > img:last-child {
+  width: 0.8rem;
+  transform: translateX(-0.3rem);
 }
 
-
-.player-stop>img:last-child {
+.player-stop > img:nth-of-type(2) {
   animation: musicStop 0.2s linear forwards;
 }
 
-.player-start>img:last-child {
+.player-start > img:last-child {
   animation: musicStart 0.2s linear forwards;
 }
 
 @keyframes musicStop {
   from {
-    transform: translateX(-0.5rem) rotate(20deg);
+    transform: translate(-0.3rem) rotate(25deg);
   }
 
   to {
-    transform: translateX(-0.5rem) rotate(0deg);
+    transform: translate(-0.3rem) rotate(0deg);
   }
 }
 
 @keyframes musicStart {
   from {
-    transform: translateX(-0.5rem) rotate(0deg)
+    transform: translate(-0.5rem, -0.3rem) rotate(0deg);
   }
 
   to {
-    transform: translateX(-0.5rem) rotate(20deg)
+    transform: translate(-0.5rem, -0.3rem) rotate(25deg);
   }
 }
 
-.player-start>img:first-child {
+.player-start > img:nth-of-type(1) {
   animation: musicRotate 3s linear infinite;
 }
 
-
-.player-stop>img:nth-of-type(1) {
+.player-stop > img {
   animation-play-state: paused;
 }
-
-
 
 @keyframes musicRotate {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
@@ -95,6 +89,10 @@ header {
   align-items: center;
   padding: 0 2rem;
   background-color: #fff;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
 header img:nth-of-type(1) {
@@ -111,10 +109,15 @@ header span {
   width: 6rem;
   height: 2rem;
   text-align: center;
+  line-height: 2rem;
   font-size: 1rem;
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
+header span a {
+  color: #000;
+  text-decoration: none;
+}
 
 /* 导航栏 */
 nav {
@@ -124,7 +127,7 @@ nav {
   flex-direction: column;
   background-color: #fff;
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 3;
 }
 
@@ -143,6 +146,9 @@ nav div img {
 nav div span {
   padding-right: 3rem;
 }
+nav ul a {
+  text-decoration: none;
+}
 
 nav div .iconfont {
   font-size: 2rem;
@@ -157,10 +163,8 @@ nav ul {
   list-style: none;
 }
 
-
 nav ul .iconfont {
   font-size: 1.8rem;
-
 }
 
 nav li {
@@ -181,9 +185,13 @@ nav li {
 .xuanzhong li .iconfont {
   color: #ff5800;
 }
-
+.xuanz {
+  color: #ff5800;
+  background-color: rgb(134, 134, 134);
+}
 /* 尾部 */
 footer {
+  margin: 2rem 0;
   width: 100%;
   height: 3rem;
   display: flex;
@@ -193,6 +201,7 @@ footer {
 
 .tb img {
   width: 2rem;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .tb {
@@ -207,8 +216,8 @@ footer {
 footer p {
   color: #999;
   margin-top: 1rem;
-  font-size: .5rem;
-  transform: scale(.7);
+  font-size: 0.5rem;
+  transform: scale(0.7);
 }
 
 footer p:nth-of-type(1) {
@@ -216,7 +225,70 @@ footer p:nth-of-type(1) {
 }
 
 /* main */
-main {
-  height: 50rem;
-  /*可以删除*/
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.322);
+  margin-bottom: 3rem;
+  border-top: 2px solid #ff5800;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.027));
+}
+.car {
+  width: 100%;
+}
+.car img {
+  width: 100vw;
+}
+.left-play {
+  animation: left 1s linear forwards;
+}
+.right-play {
+  animation: right 1s linear forwards;
+}
+@keyframes left {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+.tab {
+  display: flex;
+  flex-direction: column;
+}
+.tab img {
+  width: 30vw;
+}
+
+.tab_btn {
+  padding: 0 10rem;
+  display: flex;
+  justify-content: space-around;
+}
+.tab_btn button {
+  background-color: rgb(240, 240, 240);
+  width: 10rem;
+  height: 3rem;
+  border: 1px solid #ccc;
+  margin-bottom: 3rem;
+}
+.tab2 {
+  display: flex;
+  justify-content: center;
+}
+
+.tab1 {
+  display: flex;
+  justify-content: center;
 }

@@ -2,80 +2,254 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/车型概览.css">
-    <link rel="stylesheet" href="./fonts/iconfont.css">
-    <script src="./js/touch.min.js"></script>
-    <script src="./js/jquery.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>车型概览</title>
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/车型概览.css" />
+  <link rel="stylesheet" href="./fonts/iconfont.css" />
+
+  <script src="./js/touch.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/预约咨询.js"></script>
+
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <div class="player" id="play">
-        <img src="./img/music_icon.png" />
-        <img src="./img/music_play.png" />
+  <div class="player" id="play">
+    <img src="./img/music_icon.png" />
+    <img src="./img/music_play.png" />
+  </div>
+  <nav>
+    <div>
+      <span></span>
+      <img src="./img/x.png" alt="" />
+      <span class="iconfont icon-guanbi gb"></span>
     </div>
-    <nav>
-        <!-- <span class="iconfont icon-you"></span>
-        <span class="iconfont icon-guanbi"></span> -->
-        <div>
-            <span></span>
-            <img src="./img/x.png" alt="">
-            <span class="iconfont icon-guanbi gb"></span>
+    <ul>
+      <a href="./车型概览.html">
+        <li class="xuanzhong">
+          <p>车型概览</p>
+          <span class="iconfont icon-you"></span>
+        </li>
+      </a>
+      <a href="./品牌中心.html">
+        <li>
+          <p>品牌中心</p>
+          <span class="iconfont icon-you"></span>
+        </li>
+      </a>
+      <a href="./品牌故事.html">
+        <li>
+          <p>品牌故事</p>
+          <span class="iconfont icon-you"></span>
+        </li>
+      </a>
+      <a href="./配置单详情.html">
+        <li>
+          <p>配置单详情</p>
+          <span class="iconfont icon-you"></span>
+        </li>
+      </a>
+      <a href="./预约咨询.html">
+        <li>
+          <p>预约咨询</p>
+          <span class="iconfont icon-you"></span>
+        </li>
+      </a>
+      <a href="./即刻预定.html">
+        <li>
+          <p>即刻预定</p>
+          <span class="iconfont icon-you"></span>
+        </li>
+      </a>
+      <a href="./极氪订阅.html">
+        <li>
+          <p>极氪订阅</p>
+          <span class="iconfont icon-you"></span>
+        </li>
+      </a>
+    </ul>
+  </nav>
+  <header>
+    <img class="cd" src="./img/cd.png" alt="" />
+    <img src="./img/x.png" alt="" />
+    <span><a href="./预约咨询.html">预约咨询</a></span>
+  </header>
+  <audio id="music">
+    <source src="./img/背景音乐.mp3" type="audio/mpeg" />
+  </audio>
+  <main>
+    <!-- 轮播图1 -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- 分页器 -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      </div>
+      <!-- 轮播图片 -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/kv0.f4c89c6.jpg" class="d-block" style="width: 100%" />
+          <!-- <div class="carousel-caption">
+                        <h3>第一张图片描述标题</h3>
+                    </div> -->
         </div>
-        <ul>
-            <a href="./车型概览.html">
-                <li class="xuanzhong">
-                    <p>车型概览</p><span class="iconfont icon-you"></span>
-                </li>
-            </a>
-            <a href="./品牌中心.html">
-                <li>
-                    <p>品牌中心</p><span class="iconfont icon-you"></span>
-                </li>
-            </a>
-            <a href="./配置单详情.html">
-                <li>
-                    <p>配置单详情</p><span class="iconfont icon-you"></span>
-                </li>
-            </a>
-            <a href="./预约咨询.html">
-                <li>
-                    <p>预约咨询</p><span class="iconfont icon-you"></span>
-                </li>
-            </a>
-            <a href="./即刻预定.html">
-                <li>
-                    <p>即刻预定</p><span class="iconfont icon-you"></span>
-                </li>
-            </a>
-            <a href="./极氪订阅.html">
-                <li>
-                    <p>极氪订阅</p><span class="iconfont icon-you"></span>
-                </li>
-            </a>
-        </ul>
-
-    </nav>
-    <header>
-        <img class="cd" src="./img/cd.png" alt="">
-        <img src="./img/x.png" alt="">
-        <span><a href="./预约咨询.html">预约咨询</a></span>
-    </header>
-    <main></main>
-    <footer>
-        <div class="tb">
-            <img src="./img/wx.png" alt="">
-            <img src="./img/wb.png" alt="">
-            <img src="./img/xcx.png" alt="">
+        <div class="carousel-item">
+          <img src="./img/kv1.8c0c2ea.jpg" class="d-block" style="width: 100%" />
         </div>
-        <p>隐私政策法律声明加入我们联系我们:400-0036-036极愿APP</p>
-        <p>浙江极愿智能科技有限公司浙ICP备2021025402号-1</p>
-    </footer>
+      </div>
+    </div>
+    <!-- 轮播图2 -->
+    <div class="car">
+      <img id="left" src="./img/left-car,0+拷贝.png" alt="">
+      <div class="tab">
+        <div class="tab_btn">
+          <button class="mc wow  animated fadeInLeft">我要买车</button>
+          <button class="cz wow  animated fadeInRight">我是车主</button>
+        </div>
+        <div class="tab1">
+          <img src="./img/tool01.png" alt="">
+          <img src="./img/方向盘-宋,0.png" alt="">
+          <img src="./img/tool03.png" alt="">
+        </div>
+        <div class="tab2">
+          <img src="./img/icon1.png" alt="">
+          <img src="./img/icon2,0.png" alt="">
+          <img src="./img/iocn3.png" alt="">
+        </div>
+      </div>
+      <img id="right" src="./img/right-car,0+拷贝.png" alt="">
+    </div>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- 分页器 -->
+      <div class="carousel-indicators">
+        <div></div>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      </div>
+      <div id="asd1"></div>
+      <!-- 轮播图片 -->
+      <div class="carousel-inner lbt">
+        <div class="carousel-item active">
+          <img src="./img/pic0_0.ebd35de.jpg" class="d-block" style="width: 100%" />
+          <div class="carousel-caption">
+            <h3>家华猎装轿跑</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/pic0_1.50e7268.jpg" class="d-block" style="width: 100%" />
+          <div class="carousel-caption">
+            <h3>感应式无框自动门</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/pic0_2.fb93256.jpg" class="d-block" style="width: 100%" />
+          <div class="carousel-caption">
+            <h3>光电映射 美学立体灯组</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/pic0_3.5794511.jpg" class="d-block" style="width: 100%" />
+          <div class="carousel-caption">
+            <h3>旅行家魔术背箱</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <video
+      src="https://vc9-tx2-pl-agv.autohome.com.cn/video-37/7767B91F7BD8538F/2021-05-02/0C3FA392DD4753D36F15C4841F4F2CE2-300-wm.mp4"
+      style="width:100%;margin: 1rem 0 0.5rem;" autoplay loop muted>
+    </video>
+    <!-- 轮播图3 -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- 分页器 -->
+      <div class="carousel-indicators">
+        <div></div>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      </div>
+      <!-- 轮播图片 -->
+      <div class="carousel-inner lbt">
+        <div class="carousel-item active">
+          <img src="./img/pic1_0.cea3408.jpg" class="d-block" style="width: 100%" />
+          <div class="carousel-caption">
+            <h3>家华猎装轿跑</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/pic1_1.c449106.jpg" class="d-block" style="width: 100%" />
+          <div class="carousel-caption">
+            <h3>感应式无框自动门</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 轮播图 -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- 分页器 -->
+      <div class="carousel-indicators">
+        <div></div>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
 
+      <!-- 轮播图片 -->
+      <div class="carousel-inner lbt">
+        <div class="carousel-item active">
+          <img src="./img/pic2_0.1401bbd.jpg" class="d-block" style="width: 100%" />
+          <div class="carousel-caption">
+            <h3>家华猎装轿跑</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/pic2_1.645acd4.jpg" class="d-block" style="width: 100%" />
+          <div class="carousel-caption">
+            <h3>感应式无框自动门</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/pic2_2.95cf3b8.jpg" class="d-block" style="width: 100%" />
+          <div class="carousel-caption">
+            <h3>光电映射 美学立体灯组</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="tb0" hidden>
+      <img style='width: 10rem;z-index: 10;margin-left: -10rem;margin-top: -10rem;position: absolute;'
+        src="./img/wxpublic.8c5386a.png" alt="" srcset="">
+
+    </div>
+    <div class="tb00" hidden>
+      <img style='width: 10rem;z-index: 10;position: absolute;margin-top: -10rem;' src="./img/wxappcode.2bf7520.png"
+        alt="" srcset="">
+    </div>
+    <div class="tb">
+      <img class="tb1" src="./img/wx.png" alt="" />
+      <a href="https://weibo.com/u/7576049404"><img src="./img/wb.png"></a>
+      <img class="tb2" src="./img/xcx.png" alt="" />
+    </div>
+    <p>隐私政策法律声明加入我们联系我们:400-0036-036极愿APP</p>
+    <p>浙江极愿智能科技有限公司浙ICP备2021025402号-1</p>
+  </footer>
 </body>
 
 </html>
+<script src="./js/预约咨询.js"></script>
 <script src="./js/车型概览.js"></script>
+<script src="./js/wow.js"></script>
+<script src="./js/dh.js"></script>
+
+<script>
+  new WOW().init();
+</script>
